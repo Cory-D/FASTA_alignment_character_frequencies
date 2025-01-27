@@ -42,25 +42,31 @@ Usage: FASTA_alignment_character_frequencies.py [-h] -i INPUT_FILE -o
 
 Required arguments:
 
-  -i INPUT_FILE, --input_file INPUT_FILE
+  -i INPUT_FILE, --input_file
+
                         Input alignment in FASTA format.
 
-  -o OUTPUT_FILE_PREFIX, --output_file_prefix OUTPUT_FILE_PREFIX
+  -o OUTPUT_FILE_PREFIX, --output_file_prefix
+
                         Output files prefix.
 
-  -r REFERENCE_SEQUENCE, --reference_sequence REFERENCE_SEQUENCE
+  -r REFERENCE_SEQUENCE, --reference_sequence
+
                         Reference sequence used for comparison and site
                         labelling. The reference sequence _must_ be in the alignment being 				analyzed, although counts of reference characters can be masked, as 
 			seen below, using '-d r'.
 
 Optional arguments:
 
-  -d DELETION_TYPES, --deletion_types DELETION_TYPES
+  -d DELETION_TYPES, --deletion_types
+
                         Deletion of gaps '(-)', Xs ('X'), asterisks ('*'), or
                         reference sequence from final dataframe count and
                         frequency output: Enter codes 'g', 'x', 'a', or 'r',
                         respectively following this flag.
-  -f FOCUS_ON_CHANGED, --focus_on_changed FOCUS_ON_CHANGED
+
+  -f FOCUS_ON_CHANGED, --focus_on_changed
+
                         Enter code 'y' to also generate analyses focused only
                         on those columns/sites with any frequencies that
 
